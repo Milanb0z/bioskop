@@ -1,3 +1,8 @@
+$color-black: #2c2627;
+$color-red: #bc2c3d;
+$color-wihte: #f8f3e6;
+$color-puree: #efd2bc;
+
 * {
   padding: 0;
   margin: 0;
@@ -10,4 +15,116 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 3em;
+  background-color: $color-black;
+  color: $color-red;
+  z-index: 20;
+
+  &_logo {
+    text-transform: uppercase;
+  }
+  &-links {
+    list-style-type: none;
+    display: flex;
+    &_link {
+      padding: 0.5em 1em;
+      margin: 0 0.5em;
+
+      a {
+        color: $color-wihte;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &_bg {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+  &-content {
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: relative;
+    z-index: 10;
+    color: $color-puree;
+    &_heading {
+      font-size: 3em;
+    }
+    &_subheading {
+      font-size: 2em;
+    }
+    &_actions {
+      font-size: 2rem;
+    }
+  }
+}
+
+.movies {
+  background-color: $color-black;
+  display: flex;
+  flex-direction: column;
+  &_heading {
+    color: $color-red;
+    text-align: center;
+    font-size: 3em;
+    padding: 1em 0.5em;
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    margin: 0 auto;
+    gap: 2em;
+  }
+
+  &-card {
+    border: 1px solid $color-puree;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    overflow: hidden;
+    color: $color-wihte;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    &_img {
+      width: 100%;
+      border-radius: 1em;
+    }
+    &_heading {
+    }
+
+    &_subheading {
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  background-color: $color-red;
+  color: $color-wihte;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 1em;
+  text-align: center;
 }
