@@ -119,6 +119,119 @@ body {
   }
 }
 
+.projections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-black;
+  &_heading {
+    color: $color-red;
+    text-align: center;
+    font-size: 3em;
+    padding: 1em 0.5em;
+  }
+
+  &-cards {
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-bottom: 3em;
+  }
+  &-card {
+    border-radius: 1em;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    &_img {
+      width: 50%;
+      height: auto;
+    }
+    &-text {
+      background-color: rgba(255, 255, 255, 0.427);
+      color: $color-puree;
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      &_heading {
+        font-size: 3em;
+      }
+      &_text {
+      }
+      &_acitons {
+        margin-top: auto;
+        font-size: 2rem;
+
+        display: flex;
+        justify-content: flex-end;
+        gap: 1em;
+      }
+    }
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-black;
+  min-height: 100vh;
+  &_heading {
+    color: $color-red;
+    text-align: center;
+    font-size: 3em;
+    padding: 1em 0.5em;
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    margin: 0 auto;
+    align-content: center;
+    align-items: center;
+    gap: 1em;
+    &_img {
+      width: 100%;
+      border-radius: 1em;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-black;
+  min-height: 100vh;
+
+  &-info {
+    margin: 0 auto;
+    &_heading {
+      color: $color-red;
+      text-align: center;
+      font-size: 3em;
+      padding: 1em 0.5em;
+    }
+
+    &_text {
+      font-size: 2em;
+      padding: 0.5em 0;
+      color: $color-wihte;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 2em 4em;
+  background-color: #181616;
+  color: $color-wihte;
+
+  &_text {
+  }
+}
+
 .btn {
   display: inline-block;
   background-color: $color-red;
