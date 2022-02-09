@@ -57,24 +57,14 @@ body {
 }
 
 .hero {
-  position: relative;
+  background-color: #2c2627;
   overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.hero_bg {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  font-size: clamp(0.6em, 2vw, 1em);
 }
 
 .hero-content {
@@ -87,13 +77,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1em;
-  position: relative;
-  z-index: 10;
   color: #efd2bc;
 }
 
 .hero-content_heading {
-  font-size: 3em;
+  font-size: 6em;
 }
 
 .hero-content_subheading {
@@ -106,6 +94,7 @@ body {
 
 .movies {
   background-color: #2c2627;
+  padding: 2em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,6 +119,13 @@ body {
       grid-template-columns: repeat(4, 15em);
   margin: 0 auto;
   gap: 2em;
+  margin-bottom: 2em;
+}
+
+.movies .btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .movies-card {
@@ -154,7 +150,7 @@ body {
 }
 
 .projections {
-  font-size: clamp(0.8em, 1.4vw, 1em);
+  font-size: clamp(0.8em, 1.4vw, 1.6em);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,7 +460,7 @@ body {
 
 .sideNav {
   display: none;
-  position: absolute;
+  position: fixed;
   left: 0;
   width: 70%;
   height: 100vh;

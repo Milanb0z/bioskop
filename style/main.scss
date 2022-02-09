@@ -51,28 +51,23 @@ body {
 }
 
 .hero {
-  position: relative;
+  background-color: $color-black;
   overflow: hidden;
+  display: grid;
+  place-items: center;
+  text-align: center;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
 
-  &_bg {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-  }
+  font-size: clamp(0.6em, 2vw, 1em);
+
   &-content {
     margin: auto 0;
     display: flex;
     flex-direction: column;
     gap: 1em;
-    position: relative;
-    z-index: 10;
     color: $color-puree;
     &_heading {
-      font-size: 3em;
+      font-size: 6em;
     }
     &_subheading {
       font-size: 2em;
@@ -85,6 +80,7 @@ body {
 
 .movies {
   background-color: $color-black;
+  padding: 2em 0;
   display: flex;
   flex-direction: column;
   font-size: clamp(0.6em, 2vw, 1em);
@@ -100,6 +96,11 @@ body {
     grid-template-columns: repeat(4, 15em);
     margin: 0 auto;
     gap: 2em;
+    margin-bottom: 2em;
+  }
+
+  .btn {
+    align-self: center;
   }
 
   &-card {
@@ -125,7 +126,7 @@ body {
 }
 
 .projections {
-  font-size: clamp(0.8em, 1.4vw, 1em);
+  font-size: clamp(0.8em, 1.4vw, 1.6em);
 
   display: flex;
   flex-direction: column;
@@ -370,7 +371,7 @@ body {
 
 .sideNav {
   display: none;
-  position: absolute;
+  position: fixed;
   left: 0;
   width: 70%;
   height: 100vh;

@@ -8,38 +8,62 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="hero">
-      <header class="header">
-        <h2 class="header_logo">Filmic</h2>
-        <ul class="header-links">
-          <li class="header-links_link">
+    <header class="header">
+      <a class="header_logo" href="./index.html">Filmic</a>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="header-links">
+        <li class="header-links_link">
+          <a href="./index.html">Pocetna</a>
+        </li>
+        <li class="header-links_link">
+          <a href="./projekcije.html">Projekcije</a>
+        </li>
+        <li class="header-links_link">
+          <a href="./galerija.html">Galerija</a>
+        </li>
+        <li class="header-links_link">
+          <a href="./kontakt.html">Kontakt</a>
+        </li>
+        <li class="header-links_link">
+          <a href="#">Pocetna</a>
+        </li>
+      </ul>
+
+      <aside class="sideNav">
+        <ul class="sideNav-links">
+          <li class="sideNav-links_link">
             <a href="./index.html">Pocetna</a>
           </li>
-          <li class="header-links_link">
+          <li class="sideNav-links_link">
             <a href="./projekcije.html">Projekcije</a>
           </li>
-          <li class="header-links_link">
+          <li class="sideNav-links_link">
             <a href="./galerija.html">Galerija</a>
           </li>
-          <li class="header-links_link">
+          <li class="sideNav-links_link">
             <a href="./kontakt.html">Kontakt</a>
           </li>
-          <li class="header-links_link">
+          <li class="sideNav-links_link">
             <a href="#">Pocetna</a>
           </li>
         </ul>
-      </header>
+      </aside>
+    </header>
+    <section class="hero">
       <div class="hero-content">
-        <h2 class="hero-content_heading">Lorem, ipsum.</h2>
+        <h2 class="hero-content_heading">Naš Bioskop</h2>
         <p class="hero-content_subheading">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aperiam?
+          Dobrodošli u naš bioskop, pogledajte šta vas zanima
         </p>
         <div class="hero-content_actions">
-          <a href="#" class="btn">View More</a>
-          <a href="#" class="btn">Get a ticket</a>
+          <a href="./projekcije.html" class="btn">Repertoar</a>
+          <a href="./rezervacije.html" class="btn">Rezervacija</a>
         </div>
       </div>
-      <img src="./assets/spiderman.jpg" alt="HeroMovie" class="hero_bg" />
     </section>
     <section class="movies">
       <h2 class="movies_heading">Trenutno u bioskopima</h2>
@@ -120,5 +144,6 @@
     <footer class="footer">
       <h2 class="footer-text">Dizajn i Razvoj Milan Bozic IS 96/20</h2>
     </footer>
+    <script src="./script/main.js"></script>
   </body>
 </html>
