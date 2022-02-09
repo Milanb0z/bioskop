@@ -10,7 +10,7 @@
   <body>
     <section class="reservation">
       <header class="header">
-        <h2 class="header_logo">Filmic</h2>
+        <a class="header_logo" href="./index.html">Filmic</a>
         <ul class="header-links">
           <li class="header-links_link">
             <a href="./index.html">Pocetna</a>
@@ -37,8 +37,47 @@
           <input
             type="text"
             class="reservation-form_input"
-            placeholder="Unesite vase ime ovde"
+            placeholder="Em@il"
+            id="email"
           />
+          <input
+            type="text"
+            class="reservation-form_input"
+            placeholder="Broj Telefona"
+            id="phone"
+          />
+
+          <div class="reservation-main_select">
+            <label for="cars">Film: </label>
+
+            <select name="cars" id="movie">
+              <option value="Spiderman">Spiderman</option>
+              <option value="Baeman">Baeman</option>
+              <option value="Avengers">Avengers</option>
+            </select>
+          </div>
+          <input
+            type="number"
+            class="reservation-form_input"
+            placeholder="Broj Karata"
+            id="numberOfCards"
+          />
+          <div class="reservation-form_radio">
+            <div class="reservation-form_radio_option">
+              <input name="time" type="radio" name="17:00" id="17" />
+              <label for="17">17:00</label>
+            </div>
+
+            <div class="reservation-form_radio_option">
+              <input name="time" type="radio" name="19:00" id="19" />
+              <label for="19">19:00</label>
+            </div>
+            <div class="reservation-form_radio_option">
+              <input name="time" type="radio" name="21:00" id="21" />
+              <label for="21">21:00</label>
+            </div>
+          </div>
+          <button type="submit" class="btn">Potvrda</button>
         </form>
       </div>
 
@@ -46,5 +85,6 @@
         <h2 class="footer-text">Dizajn i Razvoj Milan Bozic IS 96/20</h2>
       </footer>
     </section>
+    <script src="./script/main.js"></script>
   </body>
 </html>
