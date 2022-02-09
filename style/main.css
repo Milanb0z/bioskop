@@ -499,6 +499,10 @@ body {
 }
 
 @media screen and (max-width: 1150px) {
+  .gallery-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
   .movies-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
